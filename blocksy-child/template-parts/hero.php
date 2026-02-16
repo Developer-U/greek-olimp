@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 $hero_heading = get_field('hero_heading');
+$hero_bg_image = get_field('hero_bg_image');
 ?>
 
 <!-- Section делаем relative -->
@@ -18,7 +19,6 @@ $hero_heading = get_field('hero_heading');
     <div class="hero__box position-absolute">
         <div class="swiper hero__slider hero-slider">
             <div class="swiper-wrapper">
-
                 <?php if (have_rows('new_hero_slide')): ?>
                     <?php while (have_rows('new_hero_slide')):
                         the_row();
@@ -35,8 +35,12 @@ $hero_heading = get_field('hero_heading');
         </div>
     </div>
 
+    <div class="hero__bg"
+        style="<?php if ($hero_bg_image): ?> background: url(<?php echo $hero_bg_image['url']; ?> ) no-repeat center/cover <?php else: ?>background: #1C2540;<?php endif; ?>">
+    </div>
+
     <!-- Сам контент в блоке Hero -->
-    <div class="container-fluid wide position-relative d-flex align-items-center justify-content-between">
+    <div class="hero-inner container-fluid wide position-relative d-flex align-items-center justify-content-between">
         <div class="hero-side"></div>
 
         <div class="hero__wrapper hero-wrapper">

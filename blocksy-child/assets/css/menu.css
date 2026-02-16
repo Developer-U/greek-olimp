@@ -292,37 +292,13 @@
 
 
 @media (max-width:930px) and (max-height:420px) {
-    .header__logo {
-        width: 110px;
-    }
-
     .header__tel {
         font-size: 18px;
-    }
-
-    .burger {
-        height: 18px;
-    }
-
-    .burger span {
-        width: 30px;
     }
 
     .burger-close svg {
         width: 25px;
         height: 25px;
-    }
-
-    .burger span:nth-child(3) {
-        width: 20px;
-    }
-
-    .burger span:nth-child(2) {
-        top: 8px;
-    }
-
-    .burger span:nth-child(3) {
-        top: 17px;
     }
 
     #primary-menu li a {
@@ -337,6 +313,8 @@
     .header__wrapper {
         gap: 10px;
         flex-wrap: nowrap;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 
     .header__tel a {
@@ -427,6 +405,10 @@
 @media (max-width:439px) {
     .header__tel a, .other-pages .header__tel a {
         font-size: 16px;
+    }
+
+    .header__logo {
+        display: none;
     }
 }
 
