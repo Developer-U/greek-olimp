@@ -18,12 +18,14 @@
 	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
 		href="https://apartolimp.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapartolimp.ru%2Frooms%2F&amp;format=xml"> -->
 	<script src="https://apartolimp.ru/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1" defer=""></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=911b9f4c-3da2-4b95-9067-6a4eb4603498&lang=ru_RU"
+		type="text/javascript">
+		</script>
 	<?php wp_head(); ?>
 	<?php do_action('blocksy:head:end') ?>
 
 	<!-- start TL head script -->
-	<script type="text/javascript">
-
+	<script type='text/javascript'>
 		(function (w) {
 			var q = [
 				["setContext", "TL-INT-greekolimp_2025-07-31", "ru"],
@@ -32,10 +34,12 @@
 				}],
 				["embed", "search-form", {
 					container: "tl-search-form"
+				}],
+				["setContext", "TL-INT-greekolimp_2025-07-31.rooms", "ru"],
+				["embed", "booking-form", {
+					container: "tl-booking-form-rooms"
 				}]
 			];
-
-
 			var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
 			var t = w.travelline = (w.travelline || {}),
 				ti = t.integration = (t.integration || {});
@@ -51,52 +55,6 @@
 				})(h);
 			}
 		})(window);
-		document.addEventListener("DOMContentLoaded", function () {
-			if (window.location.href.indexOf("/rooms") !== -1) {
-				var link = document.getElementById("hb_room_load_booking_form");
-				if (link) {
-					if (window.location.href.indexOf("lang=en") !== -1) {
-						link.textContent = "Book now";
-					} else {
-						link.textContent = "Забронировать";
-					}
-
-					link.setAttribute("href", "/booking?room-type=");
-					link.setAttribute("target", "_self");
-
-					Array.from(link.attributes).forEach(function (attr) {
-						if (attr.name.startsWith("data-")) {
-							link.removeAttribute(attr.name);
-						}
-					});
-
-					link.removeAttribute("id");
-				}
-
-				const divElement = document.createElement("div");
-				divElement.innerHTML = `
-			<!-- start TL Search form script -->
-			<div id="block-search" class="block-search--inner">
-				<div id="tl-search-form" class="tl-container">
-					<noindex><a href="https://www.travelline.ru/products/tl-hotel/" rel="nofollow" target="_blank">TravelLine</a></noindex>
-				</div>
-			</div>
-			<!-- end TL Search form script -->
-		`;
-
-				const targetElement = document.querySelector(".sidebar");
-				if (targetElement) {
-					targetElement.insertAdjacentElement("afterBegin", divElement);
-				}
-			}
-
-		});
-
-	</script>
-
-	<script type="text/javascript" async="" src="https://ru-ibe.tlintegration.ru/integration/loader.js"></script>
-
-	<script type="text/javascript">(function () { document.addEventListener("DOMContentLoaded", function () { var elem = document.querySelector("#tl-search-form"); if (elem) { var elemTop = elem.getBoundingClientRect().top + window.pageYOffset; function scrollFix() { if ((elemTop <= window.pageYOffset) && (document.documentElement.offsetWidth >= 1199)) { elem.classList.add("fixed") } else { elem.classList.remove("fixed") } } scrollFix(); window.addEventListener("scroll", scrollFix); } }); })();
 	</script>
 	<!-- end TL head script -->
 </head>

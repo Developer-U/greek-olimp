@@ -3,13 +3,13 @@
 /*Map*/
 
 .map {
-    height: 685px;
+    height: 751px;
 }
 
 .baloon__text {
     font-size: 12px;
     line-height: 120%;
-    font-family: var(--font_light);
+    font-family: var(--font_regular);
 }
 
 .baloon__text:not(:last-of-type) {
@@ -61,6 +61,6 @@ body .ymaps-2-1-79-balloon__content>ymaps {
 
 @media (max-width:767px) {
     .map {
-        height: 430px;
+        height: 360px;
     }
 }

@@ -13,5 +13,25 @@ window.addEventListener('DOMContentLoaded', function(){
         // },                  
       
     });
-   
+
+    // Слайдер в блоке Gallery
+
+    const gallery_slider = new Swiper('.gallery-slider', {
+        // Optional parameters
+        direction: 'horizontal',      
+        slidesPerView: 'auto',
+        spaceBetween: 9, 
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },  
+        
+        breakpoints: {
+        768: {
+            spaceBetween: 17, 
+        }
+        }
+    });   
 });

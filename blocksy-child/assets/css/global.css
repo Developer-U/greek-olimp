@@ -163,6 +163,17 @@ section.about {
     padding-top: 355px;
 }
 
+section.map-block {
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+section.mini-booking-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--blue);
+}
+
 footer {
     padding-top: 112px;
     padding-bottom: 77px;
@@ -175,6 +186,10 @@ section.grey {
 
 body footer * {
     color: var(--white);
+}
+
+.reviews #sw-app-bff51acefdc04600968a16f797b50b00 .sw-app-body {
+    width: 100%;
 }
 
 .reviews-wrap__reviews .reviews-item * {
@@ -273,6 +288,12 @@ a.go-to-button {
     margin-right: auto;
 }
 
+#tl-booking-form-rooms {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 @keyframes slide-top-down {
     from {
         transform: translateY(0);
@@ -359,6 +380,11 @@ a.go-to-button {
     section.about {
         padding-top: 215px;
     }
+
+    section.map-block {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
 }
 
 @media (max-width:991px) {
@@ -418,6 +444,11 @@ a.go-to-button {
         padding-top: 80px;
     }
 
+    section.map-block {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     body h1 {
         font-size: 25px;
         margin-bottom: 8px;
@@ -475,6 +506,11 @@ a.go-to-button {
 
     section.about {
         padding-top: 70px;
+    }
+
+    section.map-block {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .container-fluid.hero-inner {
