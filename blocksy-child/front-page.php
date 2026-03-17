@@ -24,7 +24,7 @@ get_template_part('template-parts/services', 'block');
 get_template_part('template-parts/gallery', 'block');
 
 // Reviews
-// get_template_part('template-parts/reviews', 'block');
+get_template_part('template-parts/reviews', 'block');
 
 // Map
 get_template_part('template-parts/map', 'block');

@@ -8,21 +8,17 @@
 <html <?php language_attributes(); ?><?php echo blocksy_html_attr() ?>>
 
 <head>
-	<?php do_action('blocksy:head:start') ?>
+
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<!-- <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-		href="https://apartolimp.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapartolimp.ru%2Frooms%2F">
-	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-		href="https://apartolimp.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapartolimp.ru%2Frooms%2F&amp;format=xml"> -->
+	<link rel="profile" href="https://gmpg.org/xfn/11">	
 	<script src="https://apartolimp.ru/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1" defer=""></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=911b9f4c-3da2-4b95-9067-6a4eb4603498&lang=ru_RU"
 		type="text/javascript">
 		</script>
 	<?php wp_head(); ?>
-	<?php do_action('blocksy:head:end') ?>
+
 
 	<!-- start TL head script -->
 	<script type='text/javascript'>

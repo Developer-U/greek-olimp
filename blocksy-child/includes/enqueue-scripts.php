@@ -6,6 +6,7 @@ if (!defined('ABSPATH')) {
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 function my_scripts_method()
 {
+	
 	wp_register_style('bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css');
 	wp_enqueue_style('bootstrap_css');
 	wp_register_style('fancybox_css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css');

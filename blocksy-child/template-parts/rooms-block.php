@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="rooms-block">
+<section class="rooms-block" id="rooms">
     <div class="container">
         <h2 class="rooms-block__heading">Наши номера</h2>
 

@@ -81,7 +81,7 @@ do_action('blocksy:footer:before');
 
             <p class="copyright-text">
                 <?php if ($research) {
-                    echo 'Разработка сайта:&nbsp<a href=" ' . $research['link'] . ' ">' . $research['text'] . '</a>';
+                    echo 'Разработка сайта:&nbsp<a class="copyright-text" href=" ' . $research['link'] . ' ">' . $research['text'] . '</a>';
                 } ?>
             </p>
         </div>

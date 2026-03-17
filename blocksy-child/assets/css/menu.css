@@ -56,6 +56,12 @@
 .footer #primary-menu li a {
     font-size: 24px;
     text-transform: uppercase;
+    transition: color .3s ease-in-out;
+}
+
+.footer #primary-menu li a:hover, .footer #primary-menu li a:focus {
+    color: var(--black);
+    transition: color .3s ease-in-out;
 }
 
 .header__contacts {
@@ -103,7 +109,13 @@
 
 .footer__contacts .header-list__item a {
     font-size: 18px;
+    transition: color .25s ease-in-out;
 }
+
+.footer__contacts .header-list__item a:hover, .footer__contacts .header-list__item a:focus {
+    color: var(--black);
+    transition: color .25s ease-in-out;
+} 
 
 .header-list__item a {
     font-size: 16px;

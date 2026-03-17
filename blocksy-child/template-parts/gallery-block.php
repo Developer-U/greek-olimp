@@ -10,7 +10,7 @@ $logo_white = get_field('logo_white', 'options');
 $gallery_heading = get_field('gallery_heading');
 ?>
 
-<section class="gallery" id="gallery">
+<section class="gallery" id="galery">
     <div class="container-fluid">
         <?php if ($gallery_heading) {
             echo '<h2 class="gallery__heading">' . $gallery_heading . '</h2>';
