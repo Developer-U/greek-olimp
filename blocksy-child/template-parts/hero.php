@@ -48,11 +48,9 @@ $hero_bg_image = get_field('hero_bg_image');
                 echo '<h1 class="hero__title">' . $hero_heading . '</h1>';
             } ?>
 
-            <div class="hero-wrapper__social blue centered">
-                <?php
-                get_template_part('template-parts/social');
-                ?>
-            </div>
+            <!-- Удалил здесь вставку иконок соц сетей
+            <div class="hero-wrapper__social blue centered">           
+            </div> -->
 
             <?php
             //    Код вставки модуля бронирования Traveline
@@ -60,10 +58,8 @@ $hero_bg_image = get_field('hero_bg_image');
             ?>
         </div>
 
-        <div class="hero-side white">
-            <?php
-            get_template_part('template-parts/social');
-            ?>
-        </div>
+        <!-- Удалил здесь вставку иконок соц сетей
+        <div class="hero-side white">          
+        </div> -->
     </div>
 </section>

@@ -255,6 +255,15 @@ body h2 {
     letter-spacing: 1px;
 }
 
+/* body h2 {
+    margin-bottom: 29px;
+    color: var(--blue);
+    line-height: 120%;
+    font-family: var(--font_regular);
+    font-size: 1.8rem;
+    font-weight: 600;
+} */
+
 body h3 {
     margin-bottom: 24px;
     color: var(--blue);
@@ -343,7 +352,63 @@ a.go-to-button {
 
 /*Media*/
 
-@media (min-width:1921px) {}
+@media (min-width:1921px) {
+    body .container, body .container-fluid {
+        max-width: 65vw;
+    }
+
+    body .container-fluid.wide {
+        max-width: 86vw;
+    }
+
+    body .button {
+        padding: 0.4vw 2vw;
+        font-size: 0.85vw;
+        min-height: 2vw;
+    }
+
+    section {
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    section.hero {
+        min-height: 79.5vh;
+    }
+
+    section.mini-booking-block {
+        padding-top: 0.8vw;
+        padding-bottom: 0.8vw;
+    }
+
+    body h1 {
+        margin-bottom: 26px;
+        font-size: 1.85vw;
+    }
+
+    body h2 {
+        margin-bottom: 0.8vw;
+        font-size: 1.6vw;
+    }
+
+    body .post h3 {
+        margin-bottom: 0.5vw;
+        font-size: 1.1vw;
+    }
+
+    body p {
+        font-size: 0.75vw;
+    }
+
+    body .post p:not(:last-child) {
+        margin-bottom: 0.4vw;
+    }
+
+    body .ct-icon, .ct-icon-container svg {
+        width: 1.4vw;
+        height: 1.4vw;
+    }
+}
 
 @media (max-width:1599px) {
     section {
