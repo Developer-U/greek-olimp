@@ -41,7 +41,7 @@ $hero_bg_image = get_field('hero_bg_image');
 
     <!-- Сам контент в блоке Hero -->
     <div class="hero-inner container-fluid wide position-relative d-flex align-items-center justify-content-between">
-        <div class="hero-side"></div>
+        <!-- <div class="hero-side"></div> -->
 
         <div class="hero__wrapper hero-wrapper">
             <?php if ($hero_heading) {

@@ -12,7 +12,7 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-	<link rel="profile" href="https://gmpg.org/xfn/11">	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script src="https://apartolimp.ru/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1" defer=""></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=911b9f4c-3da2-4b95-9067-6a4eb4603498&lang=ru_RU"
 		type="text/javascript">
@@ -104,9 +104,15 @@
 				<?php }
 				; ?>
 
+				<!-- Кнопка открытия страницы букинга -->
 				<a class="button transparent-btn" href="/booking">
 					Забронировать
 				</a>
+
+				<!-- Кнопка открытия букинга в попапе -->
+				<!-- <a class="button transparent-btn" href="#tl-booking-form-rooms" data-tl-booking-open="true">
+					Забронировать
+				</a> -->
 			</div>
 		</div>
 	</header>

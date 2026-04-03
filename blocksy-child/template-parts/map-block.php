@@ -14,7 +14,7 @@ $map_mark_zoom = get_field('map_mark_zoom', 'options') ? get_field('map_mark_zoo
 ?>
 
 <section class="map-block">
-    <div class="container-fluid">
+    <div class="container">
         <div class="map" id="map"></div>
     </div>
 </section>
@@ -54,6 +54,6 @@ $map_mark_zoom = get_field('map_mark_zoom', 'options') ? get_field('map_mark_zoo
     return false;
                 });
 
-    myMap.behaviors.disable('scrollZoom');
+    // myMap.behaviors.disable('scrollZoom');
             };
 </script>

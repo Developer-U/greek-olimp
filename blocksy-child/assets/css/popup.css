@@ -27,10 +27,11 @@
 }
 
 .popup__cont {
-    width: 38%;
-    height: 100%;
-    margin-left: auto;
-    background-color: var(--black);
+    width: 60%;
+    max-width: 1465px;
+    height: 85%;
+    margin: auto;
+    background-color: var(--white);
     padding: 100px 66px;
     position: relative;
 }

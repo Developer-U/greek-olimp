@@ -17,7 +17,7 @@ if (have_rows('new_service', 'options')) {
     ?>
 
     <section id="services" class="services grey">
-        <div class="container-fluid">
+        <div class="container">
             <?php if ($services_heading) {
                 echo '<h2 class="services__heading">' . $services_heading . '</h2>';
             } ?>
@@ -60,8 +60,6 @@ if (have_rows('new_service', 'options')) {
 
                             <p class="services-box__text">
                                 <?php echo $service_title; ?>
-                                <?php echo $service_price_mode; ?>
-                                <?php echo $price; ?>
                             </p>
                         </li>
                     <?php }

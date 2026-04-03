@@ -11,7 +11,7 @@ $gallery_heading = get_field('gallery_heading');
 ?>
 
 <section class="gallery" id="galery">
-    <div class="container-fluid">
+    <div class="container">
         <?php if ($gallery_heading) {
             echo '<h2 class="gallery__heading">' . $gallery_heading . '</h2>';
         } ?>

@@ -5,7 +5,7 @@
 ?>
 
 <section class="rooms-block" id="rooms">
-    <div class="container-fluid">
+    <div class="container">
         <h2 class="rooms-block__heading">Наши номера</h2>
 
         <!-- start TL Booking form script -->

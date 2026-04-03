@@ -26,7 +26,7 @@ $about_text = get_field('about_text');
         </div>
     </div>
 
-    <div class="container-fluid section-block about__block">
+    <div class="container section-block about__block">
         <div class="row cols-auto">
             <div class="section-block__text">
                 <h2 class="section-block__heading">

@@ -12,7 +12,7 @@ $reviews_heading = get_field('reviews_heading', 'options');
 ?>
 
 <section class="reviews grey" id="reviews">
-    <div class="container-fluid">
+    <div class="container">
         <?php if ($reviews_heading) {
             echo '<h2 class="reviews__heading">' . $reviews_heading . '</h2>';
         } ?>
