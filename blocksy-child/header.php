@@ -25,9 +25,6 @@
 		(function (w) {
 			var q = [
 				["setContext", "TL-INT-greekolimp_2025-07-31", "ru"],
-				["embed", "booking-form", {
-					container: "tl-booking-form"
-				}],
 				["embed", "search-form", {
 					container: "tl-search-form"
 				}],
@@ -105,7 +102,7 @@
 				; ?>
 
 				<!-- Кнопка открытия страницы букинга -->
-				<a class="button transparent-btn" href="/booking">
+				<a class="button transparent-btn" href="?tl-booking-open=true">
 					Забронировать
 				</a>
 

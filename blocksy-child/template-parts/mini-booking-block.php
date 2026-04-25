@@ -7,7 +7,7 @@
 
 <section class="mini-booking-block">
     <div class="container">
-        <a class="button blue-btn centered" href="/booking">
+        <a class="button blue-btn centered" href="?tl-booking-open=true">
             Забронировать номер
         </a>
     </div>
